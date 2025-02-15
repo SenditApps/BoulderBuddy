@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bouldering Guide</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script defer src="script.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+    </head>
+    <body>
+        <!-- App Header -->
+        <header class="app-header">
+            <h1>Bouldering Guide</h1>
+        </header>
+
+        <!-- Main Content -->
+        <main class="container">
+            <!-- Route-Grade Translator -->
+            <section class="card">
+                <h2>🎮 Route-Grade Translator</h2>
+                <form id="translator-form">
+                    <label for="grade-input"
+                        >Enter a grade (e.g., V2 or Font 5A):</label
+                    >
+                    <input type="text" id="grade-input" placeholder="V2" />
+                    <button type="submit">Convert</button>
+                </form>
+                <div id="conversion-result"></div>
+            </section>
+
+            <!-- Grade Conversion Table -->
+            <section class="card">
+                <h2>📊 Grade Conversion Table</h2>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Font (V)</th>
+                                <th>BFF</th>
+                                <th>Boruda</th>
+                                <th>Lighthouse</th>
+                                <th>Boulder Planet</th>
+                                <th>Boulder+</th>
+                                <th>Fit Bloc</th>
+                                <th>Ground Up</th>
+                                <th>Climba</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>V1</td>
+                                <td>1/2</td>
+                                <td>7Q</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>white</td>
+                                <td>1</td>
+                                <td>V1</td>
+                                <td>blue</td>
+                            </tr>
+                            <tr>
+                                <td>V2</td>
+                                <td>3/4</td>
+                                <td>6Q</td>
+                                <td>2</td>
+                                <td>2/3</td>
+                                <td>yellow</td>
+                                <td>2</td>
+                                <td>V2</td>
+                                <td>blue</td>
+                            </tr>
+                            <tr>
+                                <td>V3</td>
+                                <td>5/6</td>
+                                <td>5Q</td>
+                                <td>3</td>
+                                <td>4/5</td>
+                                <td>red</td>
+                                <td>3</td>
+                                <td>V3</td>
+                                <td>yellow</td>
+                            </tr>
+                            <tr>
+                                <td>V4</td>
+                                <td>7/8</td>
+                                <td>4Q</td>
+                                <td>4</td>
+                                <td>6/7</td>
+                                <td>blue</td>
+                                <td>4</td>
+                                <td>V4</td>
+                                <td>yellow</td>
+                            </tr>
+                            <tr>
+                                <td>V5</td>
+                                <td>9/10</td>
+                                <td>3Q</td>
+                                <td>5</td>
+                                <td>8</td>
+                                <td>purple</td>
+                                <td>5</td>
+                                <td>V5</td>
+                                <td>red</td>
+                            </tr>
+                            <tr>
+                                <td>V6</td>
+                                <td>11/12</td>
+                                <td>2Q</td>
+                                <td>6</td>
+                                <td>9</td>
+                                <td>green</td>
+                                <td>6</td>
+                                <td>V6</td>
+                                <td>red</td>
+                            </tr>
+                            <tr>
+                                <td>V7</td>
+                                <td>13/14</td>
+                                <td>1Q</td>
+                                <td>7</td>
+                                <td>10</td>
+                                <td>pink</td>
+                                <td>7</td>
+                                <td>V7</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>V8</td>
+                                <td>15</td>
+                                <td>1D</td>
+                                <td>8</td>
+                                <td>11</td>
+                                <td>black</td>
+                                <td>8</td>
+                                <td>V8</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>V9</td>
+                                <td></td>
+                                <td>2D</td>
+                                <td>9</td>
+                                <td>12</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Gym Information -->
+            <section class="card">
+                <h2>Information referenced from here on this free website</h2>
+                <h2>
+                    https://blog.ngzhian.com/bouldering-singapore.html#by-experience-level
+                </h2>
+                <h2>🏋️‍♀️ Gym Information</h2>
+                <article>
+                    <h3>BFF Climb Bendemeer</h3>
+                    <ul>
+                        <li>
+                            <strong>Difficulty:</strong> Beginner, Intermediate,
+                            Advanced
+                        </li>
+                        <li>
+                            <strong>Highlights:</strong> Large gym (something
+                            for every level), auto-belay top rope system
+                        </li>
+                        <li>
+                            <strong>Facilities:</strong> Beginner area, small
+                            training area (hang board, campus boards), 2 Moon
+                            boards (2016 and 2024 kit)
+                        </li>
+                        <li>
+                            <strong>Route-setting:</strong> Diverse and varied,
+                            slab wall, small overhang feature
+                        </li>
+                        <li><strong>Grading:</strong> 1 to 15 (15 is V8)</li>
+                        <li><strong>Crowd:</strong> High</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Boruda</h3>
+                    <ul>
+                        <li>
+                            <strong>Difficulty:</strong> Intermediate, Advanced
+                        </li>
+                        <li><strong>Highlights:</strong> Spray wall (hard)</li>
+                        <li>
+                            <strong>Facilities:</strong> Ping pong table, small
+                            training area, hang boards, campus board
+                        </li>
+                        <li>
+                            <strong>Route-setting:</strong> Technical, tricky
+                            feet, beta-intensive
+                        </li>
+                        <li>
+                            <strong>Grading:</strong> 9-kyu to 2-dan (JP system)
+                        </li>
+                        <li><strong>Crowd:</strong> High</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Lighthouse</h3>
+                    <ul>
+                        <li><strong>Difficulty:</strong> Advanced</li>
+                        <li>
+                            <strong>Highlights:</strong> Spray wall, kilter
+                            board, Moon board, tension board
+                        </li>
+                        <li>
+                            <strong>Facilities:</strong> Campus rungs, hang
+                            boards, large training area (free weights)
+                        </li>
+                        <li>
+                            <strong>Route-setting:</strong> Powerful, technical,
+                            beta-intensive
+                        </li>
+                        <li>
+                            <strong>Grading:</strong> 1 to 9 (Mah Jong tiles;
+                            roughly equals to V)
+                        </li>
+                        <li><strong>Crowd:</strong> Low</li>
+                    </ul>
+                </article>
+                <!-- Add additional gym articles as needed... -->
+            </section>
+
+            <!-- By Experience Level -->
+            <section class="card">
+                <h2>🌟 By Experience Level</h2>
+                <div class="experience-level">
+                    <h3>Beginner</h3>
+                    <p>BFF Climb Bendemeer, Climba, Boulder Movement</p>
+                </div>
+                <div class="experience-level">
+                    <h3>Intermediate</h3>
+                    <p>Boruda, BFF Climb Bendemeer, Boulder+, Boulder Planet</p>
+                </div>
+                <div class="experience-level">
+                    <h3>Advanced</h3>
+                    <p>Lighthouse, Boulder+, Boulder Planet</p>
+                </div>
+            </section>
+
+            <!-- Bouldering Terminology Glossary -->
+            <section class="card">
+                <h2>📝 Bouldering Terminology Glossary</h2>
+                <button class="collapsible-header">
+                    View Glossary <i class="material-icons">expand_more</i>
+                </button>
+                <div class="collapsible-content">
+                    <ul>
+                        <li>
+                            <strong>Crimp:</strong> A small edge used for
+                            gripping.
+                        </li>
+                        <li>
+                            <strong>Jug:</strong> A large, easy-to-hold hold.
+                        </li>
+                        <li>
+                            <strong>Sloper:</strong> A hold that requires an
+                            open-handed grip.
+                        </li>
+                        <li>
+                            <strong>Dyno:</strong> A dynamic, explosive movement
+                            between holds.
+                        </li>
+                        <li>
+                            <strong>Beta:</strong> Information on how to
+                            complete a route.
+                        </li>
+                        <!-- More terms can be added as needed -->
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Essential Techniques, Safety Tips & Common Mistakes -->
+            <section class="card">
+                <h2>🧗 Essential Techniques</h2>
+                <p>Learn the basics to improve your climbing.</p>
+                <button class="collapsible-header">
+                    View Details <i class="material-icons">expand_more</i>
+                </button>
+                <div class="collapsible-content">
+                    <ul>
+                        <li>Use your legs more than your arms.</li>
+                        <li>Keep your hips close to the wall for balance.</li>
+                        <li>
+                            Master techniques like smearing, flagging, and heel
+                            hooks.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>⚠️ Safety Tips</h2>
+                <p>Stay safe while climbing.</p>
+                <button class="collapsible-header">
+                    View Details <i class="material-icons">expand_more</i>
+                </button>
+                <div class="collapsible-content">
+                    <ul>
+                        <li>Always warm up to prevent injuries.</li>
+                        <li>Check the landing area before climbing.</li>
+                        <li>Learn how to fall safely.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>❌ Common Mistakes</h2>
+                <p>Avoid these beginner errors.</p>
+                <button class="collapsible-header">
+                    View Details <i class="material-icons">expand_more</i>
+                </button>
+                <div class="collapsible-content">
+                    <ul>
+                        <li>Don't overgrip; relax your hands.</li>
+                        <li>Focus on proper footwork.</li>
+                        <li>Take your time and plan your moves.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <!-- Bottom Navigation Bar -->
+        <nav class="bottom-nav">
+            <a href="#" class="nav-item">
+                <i class="material-icons">home</i>
+                <span>Home</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="material-icons">search</i>
+                <span>Explore</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="material-icons">timeline</i>
+                <span>Progress</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="material-icons">account_circle</i>
+                <span>Profile</span>
+            </a>
+        </nav>
+    </body>
+</html>
